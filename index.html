@@ -10,13 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <h1>AI Poem Generator</h1>
+
       <main>
-        <form>
+        <form id="search-form">
           <input
             type="text"
             placeholder="Enter a topic"
@@ -25,11 +27,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem-container">
-          Poem line 1
-          <br />
-          Poem line 2
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This project was coded by
