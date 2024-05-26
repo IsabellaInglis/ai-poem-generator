@@ -31,6 +31,25 @@
             <input type="submit" class="submit-button" />
           </form>
           <div class="hint">i.e. love, flowers, sunset</div>
+          <div class="length-select-container">
+            <label for="length" class="length-label">Poem Length:</label>
+            <div class="length-selection">
+              <div class="short-length">
+                <input
+                  type="radio"
+                  name="length"
+                  id="short"
+                  checked="checked"
+                />Short
+              </div>
+              <div class="medium-length">
+                <input type="radio" name="length" id="medium" />Medium
+              </div>
+              <div class="long-length">
+                <input type="radio" name="length" id="long" />Long
+              </div>
+            </div>
+          </div>
         </div>
         <div class="poem hide" id="poem"></div>
       </main>

@@ -28,8 +28,23 @@ body {
   border-radius: 10px;
 }
 
+.length-label {
+  display: block;
+  padding: 5px 0 5px 12px;
+  font-size: 14px;
+}
+
+.length-select-container {
+  display: block;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
 .length-selection {
   display: flex;
+  justify-content: space-around;
+  max-width: 250px;
 }
 
 .poem {
