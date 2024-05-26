@@ -12,14 +12,6 @@ body {
   margin: 40px auto;
 }
 
-form {
-  background: white;
-  margin: 20px auto;
-  padding: 20px 0;
-  border-radius: 2px;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-}
-
 .search-box {
   width: 300px;
   padding: 10px;
@@ -36,6 +28,10 @@ form {
   border-radius: 10px;
 }
 
+.length-selection {
+  display: flex;
+}
+
 .poem {
   background: white;
   margin: 30px auto;
@@ -46,6 +42,26 @@ form {
   line-height: 2;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   font-size: 14px;
+}
+
+.form-container {
+  background: white;
+  margin: 20px auto;
+  padding: 20px 0;
+  border-radius: 2px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+
+.hint {
+  line-height: 1.5;
+  display: flex;
+  padding: 1px 100px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.hide {
+  display: none;
 }
 
 footer {

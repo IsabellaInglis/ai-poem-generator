@@ -19,17 +19,20 @@
       <h1>AI Poem Generator</h1>
 
       <main>
-        <form id="search-form">
-          <input
-            type="text"
-            placeholder="Enter a topic"
-            required
-            class="search-box"
-            id="poem-topic"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem">testing</div>
+        <div class="form-container">
+          <form id="search-form">
+            <input
+              type="text"
+              placeholder="Enter a topic"
+              required
+              class="search-box"
+              id="poem-topic"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e. love, flowers, sunset</div>
+        </div>
+        <div class="poem hide" id="poem"></div>
       </main>
       <footer>
         This project was coded by
