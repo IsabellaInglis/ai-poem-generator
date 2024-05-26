@@ -28,12 +28,12 @@ function generatePoem(event) {
   if (shortPoem.checked) {
     selectedLength = "2-4 lines";
   } else if (mediumPoem.checked) {
-    selectedLength = "6-8 lines";
+    selectedLength = "8 lines";
   } else if (longPoem.checked) {
     selectedLength = "10-12 lines";
   }
 
-  let prompt = `Write me a short poem about ${topic.value},that is ${selectedLength} long. The poem must be provided in the following HTML format: "<div>Poem line 1<br>Poem line 2<br>Poem line 3<br>Poem line 4</div>" and so on.`;
+  let prompt = `Write me a short poem about ${topic.value},that is ${selectedLength} long. The poem must be provided with each line of the poem on it's own separate line, in the following HTML format: "<span>Poem line 1<br>Poem line 2<br>Poem line 3<br>Poem line 4</span>" and so on.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayPoem);
